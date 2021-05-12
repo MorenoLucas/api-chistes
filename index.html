@@ -4,7 +4,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      #container {
+        display: grid;
+
+        justify-items: center;
+        align-items: center;
+        width: 50vw;
+        margin: 25vh auto;
+      }
+      .card-header {
+        width: 100%;
+        text-align: center;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div id="container" class="card">
+      <div class="card-header text-muted">Proyecto Api Chistes</div>
+      <div class="card-body text-center">
+        <h5 class="card-title">Pulsa para leer un chiste</h5>
+        <p id="chistes" class="card-text"></p>
+        <button type="button" class="btn btn-success" onclick="mostrarChiste()">
+          CHISTE
+        </button>
+      </div>
+    </div>
+  </body>
   <script src="/chistes.js"></script>
 </html>
