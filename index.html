@@ -10,30 +10,24 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <style>
-      #container {
-        display: grid;
-
-        justify-items: center;
-        align-items: center;
-        width: 50vw;
-        margin: 25vh auto;
-      }
-      .card-header {
-        width: 100%;
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <div id="container" class="card">
-      <div class="card-header text-muted">Proyecto Api Chistes</div>
-      <div class="card-body text-center">
-        <h5 class="card-title">Click to read a joke</h5>
-        <p id="chistes" class="card-text"></p>
-        <button type="button" class="btn btn-success" onclick="mostrarChiste()">
-          Joke
-        </button>
+    <div class="contenedor">
+      <img src="/confetti-4.gif" alt="" id="confetti" />
+      <div id="container" class="card">
+        <div class="card-header text-muted" id="tiempo"></div>
+        <div class="card-body text-center">
+          <h5 class="card-title">Click to read a joke</h5>
+          <p id="chistes" class="card-text"></p>
+          <button
+            type="button"
+            class="btn btn-success"
+            onclick="mostrarChiste()"
+          >
+            Joke
+          </button>
+        </div>
       </div>
     </div>
   </body>
